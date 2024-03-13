@@ -73,6 +73,11 @@
     color: var(--secondary-color);
   }
 
+  h4 a {
+    color: var( --lightest-color);
+    font-size: 18px;
+  }
+
   /* Image Styles */
   figure {
     display: block;
@@ -102,51 +107,63 @@
   }
 
 /* H1 Header Styles */
-h1 {
-  font-size: 2em;
-  padding: 10px;
-  margin: 10px;
-  text-transform: uppercase;
-}
+  h1 {
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+  }
 
 /* H2 Header Styles */
-h2 {
-  padding: 25px;
-  background-color: var(--primary-color);
-  border-radius: 25px;
-  border: 3px solid var(--dark-color-1);
-  text-align: center;
-  line-height: 2em;
-  width: 45%;
-}
+  h2 {
+    padding: 25px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    border: 3px solid var(--dark-color-1);
+    text-align: center;
+    line-height: 2em;
+    width: 45%;
+  }
 
-/* H3 Header Styles */
-h3 {
-  margin: 30px;
-  padding: 20px;
-  background-color: var(--primary-color);
-  border-radius: 25px;
-  border: 3px solid var(--dark-color-1);
-  text-align: center;
-}
+/* H3 and H4 Header Styles */
+  h3, h4 {
+    margin: 30px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    border: 3px solid var(--dark-color-1);
+    text-align: center;
+  }
 
 /* Container Style Setups */
-.container, .subcontainer {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  text-align: center;
-}
+  .container, .subcontainer {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+  }
 
+
+/* Top Footer Styles */
+  #topfooter {
+    background-color: var(--light-color-1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    line-height: 1.5em;
+  }
 
   /* Footer Styles */
   #footer {
     background-color: var(--primary-color);
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
