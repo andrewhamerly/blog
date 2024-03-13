@@ -1,0 +1,31 @@
+form {
+    margin: auto;
+    padding: 10px;
+    width: 45%;
+
+}
+
+.formtit {
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: left;
+    width: 100%;
+}
+
+#submit {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    color: var( --primary-color);
+    font-size: 36px;
+    font-weight: bold;
+    border: var(--dark-color-2);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 1px var(--dark-color-1);
+    width: 90%;
+}

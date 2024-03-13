@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Personal Blog</title>
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <figure id="logo">
+                <a href="https://andrewhamerly.github.io/portfolio/">
+                <img src="./assets/images/Ah-trans-bkg.png" alt="Andrew Hamerly Circle Logo">
+                </a>
+            </figure>
+            <!-- Navbar Links -->
+            <ul class="nav-menu">
+                <li class="nav-link">
+                    <a href="#Articles">View All Articles</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <section>
+            <h1>Welcome to my personal blog</h1>
+        </section>
+
+    </header>
+
+
+    <main class="container">
+        <section class="subcontainer">
+            <h2>Let's add a new blog journal entry.
+                <p>Start by filling out the information <br>in the form, then press on submit.</p>
+            </h2>
+            <form>
+                <h3>What's on your mind today?</h3>
+                <div class="formtit">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                </div>
+                <div class="formtit">
+                <label for="title">Article Title:</label>
+                <input type="text" id="title" name="title">
+                </div>
+                <div class="formtit">
+                <label for="content">Content:</label>
+                <textarea name="content" cols="30" rows="8"></textarea>
+                </div>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer id="footer">
+        <h4>
+        <p>Source code is licensed under the MIT license.</p>
+        <p>Contents of this site are Copyright &copy; 2024 by Andrew Hamerly.</p>
+        <p>All Content Rights Reserved.</p>
+        </h4>
+    </footer>
+
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
+</body>
+
+</html>
