@@ -79,6 +79,22 @@
     background-color: var(--light-color-1);
   }
 
+  /* Toggle Button Styles */
+  #toggle {
+    margin: auto;
+    padding: 5px;
+    color: var( --primary-color);
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px, solid, var(--dark-color-1);
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 1px var(--dark-color-1);
+  }
+
+  #toggle:hover {
+    color: var(--secondary-color)
+  }
+
   /* Link Styles */
   a {
     color: var( --primary-color);

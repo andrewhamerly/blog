@@ -8,14 +8,15 @@ let content = document.getElementById('content');
 const inputValue = JSON.parse(localStorage.getItem('blogContent'));
 
 if (inputValue !== null) {
-
     inputValue.forEach(blogContent => {
         const articleElement = document.createElement('article')
         const usernameElement = document.createElement('h2');
         const titleElement = document.createElement('h3');
         const contentElement = document.createElement('p');
 
-        usernameElement.textContent = ('Name: ' + blogContent.username);
+        // WHEN I take a closer look at a single blog entry in the list,
+        // THEN I can see the title, the content, and the author of the post.
+        usernameElement.textContent = ('Author: ' + blogContent.username);
         titleElement.textContent = ('Title: ' + blogContent.title);
         contentElement.textContent = ('Content: ' + blogContent.content);
 
@@ -30,8 +31,3 @@ if (inputValue !== null) {
 // WHEN I view localStorage,
 // THEN I am presented with a JSON array of blog post objects, each including the post author's username, title of the post, and post's content.
 console.log(inputValue);
-
-
-
-// WHEN I take a closer look at a single blog entry in the list,
-// THEN I can see the title, the content, and the author of the post.
