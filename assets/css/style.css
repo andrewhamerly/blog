@@ -25,7 +25,13 @@
     font-family: Verdana, Helvetica, sans-serif;
     font-size: 1.5rem;
   }
- 
+
+   /* Dark Mode Body Styles */
+  body.dark-mode {
+    background-color: var(--dark-color-3);
+    color: var(--light-color-1);
+  }
+
   /* Navigation Styles */
   nav {
     display: flex;
@@ -46,6 +52,11 @@
     background: var(--lightest-color);
   }
 
+  /* Dark Mode Navbar */
+  .dark-mode .navbar {
+    background: var(--dark-color-2);
+  }
+
   .navbar .nav-menu {
     display: flex;
     align-items: center;
@@ -61,6 +72,11 @@
     border-style: solid;
     border-radius: 8px;
     box-shadow: 3px 3px 5px 1px var(--dark-color-1);
+  }
+
+  /* Dark Mode Nav Button Styles */
+  .dark-mode .navbar .nav-link {
+    background-color: var(--light-color-1);
   }
 
   /* Link Styles */
@@ -87,7 +103,6 @@
 
   figure img {
     display: block;
-    position: center;
     color: var(--primary-color);
     width: 125px;
   }
@@ -161,6 +176,11 @@
     line-height: 1.5em;
   }
 
+  /* Dark Mode Top Footer Styles */
+  .dark-mode #topfooter {
+    background-color: var(--dark-color-2);
+  }
+
   /* Footer Styles */
   #footer {
     background-color: var(--primary-color);
@@ -176,3 +196,41 @@
   footer p {
     text-align: center;
   }
+
+
+  /* Responsive Web Design */
+
+/* Tablet Screen Size */
+@media screen and (max-width: 786px) {
+  :root {
+    scroll-padding-top: 275px;
+  }
+  nav {
+    flex-direction: column;
+    height: 265px;
+  }
+
+  figure img {
+    width: 175px;
+    margin: auto;
+  }
+
+  .header-container {
+    margin-top: 250px;
+    padding: 10px;
+  }
+
+  .subcontainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile Screen Size */
+@media screen and (max-width: 480px) {
+  .navbar .nav-link {
+    margin-left: .2em;
+    margin-right: .2em;
+  }
+  
+}

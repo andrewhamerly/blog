@@ -20,7 +20,7 @@ form {
     padding-left: auto;
     padding-right: auto;
     color: var( --primary-color);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     border: var(--dark-color-2);
     border-width: 3px;

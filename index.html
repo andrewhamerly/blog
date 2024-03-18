@@ -22,7 +22,10 @@
             <!-- Navbar Links -->
             <ul class="nav-menu">
                 <li class="nav-link">
-                    <a href="./blog.html">View All Articles</a>
+                    <a href="./blog.html">View All Blogs</a>
+                </li>
+                <li class="nav-link">
+                    <button id="toggle">Light/Dark Mode</button>
                 </li>
             </ul>
         </nav>
@@ -39,19 +42,19 @@
             <h2>Let's add a new blog journal entry.
                 <p>Start by filling out the information <br>in the form, then press on submit.</p>
             </h2>
-            <form>
+            <form id="form">
                 <h3>What's on your mind today?</h3>
                 <div class="formtit">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
+                <input id="username" type="text" id="username" name="username">
                 </div>
                 <div class="formtit">
-                <label for="title">Article Title:</label>
-                <input type="text" id="title" name="title">
+                <label for="title">Blog Title:</label>
+                <input id="title" type="text" id="title" name="title">
                 </div>
                 <div class="formtit">
                 <label for="content">Content:</label>
-                <textarea name="content" cols="30" rows="8"></textarea>
+                <textarea id="content" name="content" cols="30" rows="8"></textarea>
                 </div>
                 <input id="submit" type="submit" value="Submit">
             </form>
