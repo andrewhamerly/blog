@@ -23,7 +23,6 @@ ChatGPT to help me trouble shoot and correct an error with adding multiple objec
 This is the specific code it helped me to generate:
    `let storedData = localStorage.getItem('blogContent');
     let blogContentArry = storedData ? JSON.parse(storedData) : [];
-
     if (!Array.isArray(blogContentArry)) {
         blogContentArry = [];
     }`
